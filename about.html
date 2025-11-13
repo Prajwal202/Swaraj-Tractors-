@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Shivshanta Motors</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmagic/2.0.8/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmagic/2.0.8/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <nav class="navbar">
+    <div class="logo">SWARAJ</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="about">
+    <h1><u>About Swaraj</u></h1>
+
+    <p><b>Swaraj is more than a brand; it's a mission dedicated to enhancing the lives of Indian farmers. Our stakeholders, dealers, partners, customers, and employees are all united by a passionate commitment to our purpose. Over the past five decades, we have ruled the hearts of Indian farming community, a testament to the satisfaction we bring to our community and society. Our success is fuelled by our team's determination to continually push the boundaries and go the extra mile in serving those who rely on us. Join us on this journey of empowerment and impact with Swaraj. Josh ka Raaz Mera Swaraj.
+
+    </p></b>
+    <div class="gallery-section">
+      <h2>Shivashanta Motor's Showroom</h2>
+      <div class="gallery">
+        <img src="images/roadext.jpg" alt="Showroom Image 1">
+        <img src="images/custl.jpg" alt="Showroom Image 2">
+        <img src="images/dcabin.jpg" alt="Showroom Image 3">
+        <img src="images/recp.jpg" alt="Showroom Image 3">
+      </div>
+      <p><b>Welcome to our showroom! We offer a wide range of tractors and farm equipment to meet your needs. Our showroom is designed to provide you with the best experience while selecting your next tractor.</p></b>
+    </div>
+
+    <div class="gallery-section">
+      <h2>Shivashanta Motor's Service Center</h2>
+      <div class="gallery">
+        <img src="images/serviceongoing.jpg" alt="Service Center Image 1">
+        <img src="images/serviceongoing2.jpg" alt="Service Center Image 2">
+        <img src="images/scustl.jpg" alt="Service Center Image 3">
+        <img src="images/parts.jpg" alt="Service Center Image 1">
+      </div>
+      <p><b>Our service center is equipped with genunie spare parts to ensure that your tractors and equipment are maintained and repaired to the highest standards. Our skilled technicians are here to help with any service needs.</b></p>
+    </div>
+
+    <div class="video-section">
+      <h2>Swaraj Story</h2>
+      <video controls autoplay loop muted>
+        <source src="images/swarajv.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Watch our video to learn more about our history, mission, and the team behind GreenTractor.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 SWARAJ Showroom. All rights reserved.</p>
+</footer>
+
+<script>
+  gsap.from(".gallery-section", { 
+    duration: 1.5, 
+    opacity: 0, 
+    y: 30, 
+    stagger: 0.3, 
+    ease: "power2.out" 
+  });
+
+  gsap.from(".video-section", { 
+    duration: 1.5, 
+    opacity: 0, 
+    scale: 0.9, 
+    ease: "power2.out", 
+    delay: 0.5 
+  });
+</script>
+
+</body>
+</html>

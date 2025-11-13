@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Shivshanta Motors</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmagic/2.0.8/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmagic/2.0.8/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <nav class="navbar">
+    <div class="logo">SWARAJ</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="contact">
+    <h2>CONTACT US</h2>
+    <h3>SHIVSHANTA MOTORS</h3>
+    <div class="contact-info">
+      <strong>Address:</strong> Vijaypur road, near Weigh Bridge, Jamkhandi-587301,Dist Bagalkote, Karnataka </p>
+      <p><strong>Showroom :</strong> 8904976355</p>
+      <p><strong>Sales Manager:</strong>8904976353</p>
+      <p><strong>Service Number:</strong> 8904976354</p>
+      <p><strong>Email:</strong> shivshantamotors@gmail.com</p>
+    </div>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1764.0194867657442!2d75.30085455591497!3d16.51316490983349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc73d46f143d4b3%3A0xfa5e68e632e50ba4!2sSHIVSHANTA%20MOTORS!5e0!3m2!1sen!2sin!4v1726201153998!5m2!1sen!2sin" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+    
+    <div class="directions">
+      <a 
+        href="https://www.google.com/maps/dir/?api=1&destination=Shivashanta+Motors,+Jamkhandi,+Karnataka,+India" 
+        target="_blank" 
+        class="get-directions-btn">
+        Get Directions
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 shivshanta motors. All rights reserved.</p>
+</footer>
+
+<script>
+  gsap.from(".contact-info p", { 
+    duration: 1.5, 
+    opacity: 0, 
+    y: 30, 
+    stagger: 0.3, 
+    ease: "power2.out" 
+  });
+
+  gsap.from(".map-container iframe", { 
+    duration: 1.5, 
+    opacity: 0, 
+    scale: 0.9, 
+    ease: "power2.out", 
+    delay: 0.5 
+  });
+
+  gsap.from(".get-directions-btn", {
+    duration: 1,
+    opacity: 0,
+    y: 50,
+    ease: "power1.out",
+    delay: 0.7
+  });
+</script>
+
+</body>
+</html>
